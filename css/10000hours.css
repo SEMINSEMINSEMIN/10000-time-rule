@@ -121,7 +121,7 @@ dfn {
     margin: 17px 0 0;
 }
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 526px) {
     .mobile-br {
         display: block;
         margin-top: 19px;
@@ -133,11 +133,18 @@ dfn {
 
 input {
     box-sizing: content-box;
+    width: 156px;
     height: 1.4rem;
     padding: 12px 0 11px;
     border-radius: 7px;
     color: var(--point-text-color);
     text-align: center;
+}
+
+@media screen and (min-width: 395px) {
+    input {
+        width: 228px;
+    }
 }
 
 input::placeholder {
