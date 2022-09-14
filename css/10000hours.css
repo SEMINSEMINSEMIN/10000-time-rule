@@ -84,6 +84,11 @@ dl {
     /* width: 302px; */
     margin-top: 62px;
     text-align: center;
+    background-image: url(/img/quotes.png);
+    background-repeat: no-repeat;
+    background-size: 302px;
+    background-position: 24px;
+    background-position: center;
 }
 
 .for-br {
