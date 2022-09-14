@@ -28,6 +28,15 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
+:root {
+    --main-bg-color: #5B2386;
+    --main-text-color: #FFFFFF;
+    --point-text-color: #5B2386;
+    --quote-color: #F5DF4D;
+    --btn-color: #FCEE21;
+    --placeholder-color: #BABCBE;
+}
+
 .blind {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -42,13 +51,13 @@ html {
 }
 
 body {
-    background-color: #5B2386;
+    background-color: var(--main-bg-color);
 }
 
 main {
     font-family: 'GmarketSansMedium';
     font-size: 1.4rem;
-    color: white;
+    color: var(--main-text-color);
     text-align: center;
 }
 
@@ -76,7 +85,7 @@ h1 {
     font-size: 2.2rem;
     font-family: 'OTEnjoystoriesBA';
     font-weight: 700;
-    color: #F5DF4D;
+    color: var(--quote-color);
     line-height: 24px;
 }
 
@@ -101,4 +110,62 @@ dd>:not(span:nth-child(1)) {
 
 dfn {
     font-family: 'GmarketSansBold';
+    /* font-weight: 700; */
+}
+
+.time-computation {
+    margin-top: 62px;
+}
+
+.goal>span:nth-child(2) {
+    margin: 17px 0 0;
+}
+
+@media screen and (max-width: 394px) {
+    .mobile-br {
+        display: block;
+        margin-top: 19px;
+    }
+    .computation-btn>span {
+        margin-top: 0;
+    }
+}
+
+input {
+    box-sizing: content-box;
+    height: 1.4rem;
+    padding: 12px 0 11px;
+    border-radius: 7px;
+    color: var(--point-text-color);
+    text-align: center;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.computation-btn {
+    position: relative;
+    box-sizing: content-box;
+    padding: 19px 36.5px 17px;
+    height: 32px;
+    color: var(--point-text-color);
+    background-color: var(--btn-color);
+    margin-top: 49px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 13px;
+}
+
+.click-img {
+    position: absolute;
+    /* bottom: 0; */
+    left: calc(100% + 6px);
+    /* bottom 위치를 어떻게 잡아야 할지 잘 모르겠음 */
+    bottom: -7px;
+    width: 43px;
+    height: 48px;
 }
