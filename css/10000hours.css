@@ -28,11 +28,13 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
-@font-face {
-    font-family: 'OTEnjoystoriesBA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 
 html {
@@ -44,6 +46,7 @@ body {
 }
 
 main {
+    font-family: 'GmarketSansMedium';
     font-size: 1.4rem;
     color: white;
     text-align: center;
@@ -74,5 +77,23 @@ h1 {
     font-family: 'OTEnjoystoriesBA';
     font-weight: 700;
     color: #F5DF4D;
-    line-height: 24.2px;
+    line-height: 24px;
+}
+
+dl {
+    /* width: 302px; */
+    margin-top: 62px;
+    text-align: center;
+}
+
+.for-br {
+    display: block;
+}
+
+dd>:not(span:nth-child(1)) {
+    margin-top: 13px;
+}
+
+dfn {
+    font-family: 'GmarketSansBold';
 }
