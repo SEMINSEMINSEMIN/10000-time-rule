@@ -1,1 +1,1 @@
-모달은 맨 마지막에 넣자
+https://seminseminsemin.github.io/10000-time-rule/
