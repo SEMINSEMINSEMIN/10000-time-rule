@@ -27,3 +27,35 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #5B2386;
+}
+
+main {
+    font-size: 1.4rem;
+    color: white;
+}
+
+h1 {
+    position: relative;
+    height: 126px;
+    margin: 41px auto 0;
+    background-image: url(/img/clock.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.title-img {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 267px;
+    height: 53px;
+}
