@@ -65,7 +65,7 @@ h1 {
     position: relative;
     height: 126px;
     margin: 41px auto 0;
-    background-image: url(/img/clock.png);
+    background-image: url(../img/clock.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -93,7 +93,7 @@ dl {
     /* width: 302px; */
     margin-top: 62px;
     text-align: center;
-    background-image: url(/img/quotes.png);
+    background-image: url(../img/quotes.png);
     background-repeat: no-repeat;
     background-size: 302px;
     background-position: 24px;
