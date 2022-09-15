@@ -115,10 +115,12 @@ dd>span:nth-child(2), dd>span:nth-child(3) {
 }
 
 dfn {
-    font-family: 'GmarketSansBold';
-    /* font-weight: 700; */
+    /* font-family로 해야할지 font-weight로 해야할지 헷갈림 */
+    /* font-family: 'GmarketSansBold'; */
+    font-weight: 700;
 }
 
+/* section.time-computation area */
 .time-computation {
     margin-top: 62px;
 }
@@ -127,7 +129,6 @@ dfn {
     margin: 17px 0 0;
 }
 
-/* 근데 작업하다 보니까 .time-computation의 input과 button은 pc기준부터 해버림.. */
 input {
     box-sizing: content-box;
     width: 156px;
@@ -148,10 +149,9 @@ input:focus, textarea:focus, select:focus{
 
 .computation-btn {
     position: relative;
-    box-sizing: content-box;
     padding: 19px 36.5px 17px;
     min-width: 168px;
-    height: 32px;
+    height: 3.2rem;
     color: var(--point-text-color);
     background-color: var(--btn-color);
     margin-top: 49px;
@@ -175,6 +175,62 @@ input:focus, textarea:focus, select:focus{
     bottom: -7px;
     width: 43px;
     height: 48px;
+}
+
+/* section.computation-result area */
+.computation-result {
+    margin-top: 64px;
+}
+
+strong {
+    font-size: 2.4rem;
+    /* font-family: 'GmarketSansBold'; */
+    font-weight: 700;
+}
+
+.computation-result .for-br {
+    margin-top: 15px;
+}
+
+.study, .share {
+    border-radius: 56px;
+    
+}
+
+.study {
+    padding: 13.5px 17.5px 12.5px;
+}
+
+.share {
+    padding: 13.5px 19px 12.5px;
+}
+
+.studynshare {
+    margin-top: 55px;
+}
+
+.studynshare button:first-child {
+    background-color: var(--btn-color);
+}
+
+/* footer area */
+footer {
+    margin-top: 83px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+small {
+    font-size: 0.9rem;
+}
+
+.logo-img {
+    width: 91px;
+    height: 18px;
+}
+
+.copyright {
+    margin-top: 17px;
 }
 
 @media screen and (min-width: 527px) {
