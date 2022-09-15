@@ -159,6 +159,8 @@ input:focus, textarea:focus, select:focus{
     position: relative;
     box-sizing: content-box;
     padding: 19px 36.5px 17px;
+    gap: 10px;
+    width: 168px;
     height: 32px;
     color: var(--point-text-color);
     background-color: var(--btn-color);
