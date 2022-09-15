@@ -63,3 +63,7 @@ small {
 	font-family: 'Noto Sans KR';
 	color: var(--main-text-color);
 }
+
+article {
+	font-family: inherit;
+}

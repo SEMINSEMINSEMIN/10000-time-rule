@@ -46,11 +46,11 @@ html {
 
 body {
     /* 왜 body 주석 풀고 modal 주석 처리하면 버튼에 폰트가 적용 안되지? */
-    /* font-family: 'GmarketSansMedium'; */
+    font-family: 'GmarketSansMedium';
 }
 
 .modal {
-    font-family: 'GmarketSansMedium';
+    /* font-family: 'GmarketSansMedium'; */
     width: 330px;
     height: 500px;
     background: #FFFFFF;
