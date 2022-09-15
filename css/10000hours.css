@@ -123,7 +123,7 @@ dfn {
 
 input {
     box-sizing: content-box;
-    width: 156px;
+    max-width: 228px;
     height: 1.4rem;
     padding: 12px 0 11px;
     border-radius: 7px;
@@ -163,20 +163,20 @@ input:focus, textarea:focus, select:focus{
 }
 
 @media screen and (min-width: 395px) {
-    input {
-        width: 228px;
-    }
-    .computation-btn {
-        width: auto;
-    }
 }
 
 @media screen and (max-width: 526px) {
+    input {
+        width: 156px;
+    }
     .mobile-br {
         display: block;
         margin-top: 19px;
     }
     .computation-btn>span {
         margin-top: 0;
+    }
+    .computation-btn {
+        width: auto;
     }
 }
