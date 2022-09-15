@@ -165,6 +165,9 @@ input:focus, textarea:focus, select:focus{
     input {
         width: 228px;
     }
+    .computation-btn {
+        width: 168px;
+    }
 }
 
 @media screen and (max-width: 526px) {
