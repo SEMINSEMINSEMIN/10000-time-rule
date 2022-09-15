@@ -153,7 +153,6 @@ input:focus, textarea:focus, select:focus{
     min-width: 168px;
     height: 3.2rem;
     color: var(--point-text-color);
-    background-color: var(--btn-color);
     margin-top: 49px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 13px;
@@ -209,8 +208,8 @@ strong {
     margin-top: 55px;
 }
 
-.studynshare button:first-child {
-    background-color: var(--btn-color);
+.studynshare button:nth-child(2) {
+    background-color: white;
 }
 
 /* footer area */
@@ -231,6 +230,14 @@ small {
 
 .copyright {
     margin-top: 17px;
+}
+
+.modal {
+    width: 800px;
+    height: 800px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
 }
 
 @media screen and (min-width: 527px) {
