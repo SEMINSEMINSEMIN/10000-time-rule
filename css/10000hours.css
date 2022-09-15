@@ -1,3 +1,4 @@
+/* 글꼴 */
 @font-face {
     font-family: 'OTEnjoystoriesBA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
@@ -28,6 +29,7 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
+/* 색깔 지정 */
 :root {
     --main-bg-color: #5B2386;
     --main-text-color: #FFFFFF;
@@ -37,6 +39,7 @@
     --placeholder-color: #BABCBE;
 }
 
+/* 요소 숨김 */
 .blind {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -46,7 +49,10 @@
     overflow: hidden;
 }
 
+/* 메인 코드 */
+/* 모바일부터 시작함 */
 html {
+    /* 계산 편리함을 위해 글꼴 10px로 설정 */
     font-size: 10px;
 }
 
@@ -104,7 +110,7 @@ dl {
     display: block;
 }
 
-dd>:not(span:nth-child(1)) {
+dd>span:nth-child(2), dd>span:nth-child(3) {
     margin-top: 13px;
 }
 
@@ -121,9 +127,10 @@ dfn {
     margin: 17px 0 0;
 }
 
+/* 근데 작업하다 보니까 .time-computation의 input과 button은 pc기준부터 해버림.. */
 input {
     box-sizing: content-box;
-    width: 228px;
+    width: 156px;
     height: 1.4rem;
     padding: 12px 0 11px;
     border-radius: 7px;
@@ -144,12 +151,20 @@ input:focus, textarea:focus, select:focus{
     box-sizing: content-box;
     padding: 19px 36.5px 17px;
     min-width: 168px;
-    gap: 10px;
+    height: 32px;
     color: var(--point-text-color);
     background-color: var(--btn-color);
     margin-top: 49px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 13px;
+}
+
+.mobile-br {
+    display: block;
+}
+
+.goal .mobile-br {
+    margin-top: 19px;
 }
 
 .click-img {
@@ -162,21 +177,13 @@ input:focus, textarea:focus, select:focus{
     height: 48px;
 }
 
-@media screen and (min-width: 395px) {
-    .computation-btn {
-        width: initial;
-    }
-}
-
-@media screen and (max-width: 526px) {
+@media screen and (min-width: 527px) {
     input {
-        width: 156px;
+        width: 228px;
     }
+
     .mobile-br {
-        display: block;
-        margin-top: 19px;
-    }
-    .computation-btn>span {
+        display: initial;
         margin-top: 0;
     }
 }
