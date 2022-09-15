@@ -163,6 +163,9 @@ input:focus, textarea:focus, select:focus{
 }
 
 @media screen and (min-width: 395px) {
+    .computation-btn {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 526px) {
@@ -175,8 +178,5 @@ input:focus, textarea:focus, select:focus{
     }
     .computation-btn>span {
         margin-top: 0;
-    }
-    .computation-btn {
-        width: auto;
     }
 }
