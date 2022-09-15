@@ -143,7 +143,7 @@ input:focus, textarea:focus, select:focus{
     position: relative;
     box-sizing: content-box;
     padding: 19px 36.5px 17px;
-    width: 168px;
+    min-width: 168px;
     gap: 10px;
     color: var(--point-text-color);
     background-color: var(--btn-color);
@@ -164,7 +164,7 @@ input:focus, textarea:focus, select:focus{
 
 @media screen and (min-width: 395px) {
     .computation-btn {
-        width: auto;
+        width: initial;
     }
 }
 
