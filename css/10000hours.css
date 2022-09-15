@@ -58,10 +58,10 @@ html {
 
 body {
     background-color: var(--main-bg-color);
+    font-family: 'GmarketSansMedium';
 }
 
 main {
-    font-family: 'GmarketSansMedium';
     font-size: 1.4rem;
     color: var(--main-text-color);
     text-align: center;
@@ -230,14 +230,6 @@ small {
 
 .copyright {
     margin-top: 17px;
-}
-
-.modal {
-    width: 800px;
-    height: 800px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
 }
 
 @media screen and (min-width: 527px) {

@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 색깔 지정 */
+:root {
+    --main-bg-color: #5B2386;
+    --main-text-color: #FFFFFF;
+    --point-text-color: #5B2386;
+    --quote-color: #F5DF4D;
+    --btn-color: #FCEE21;
+    --placeholder-color: #BABCBE;
+}
+
+/* 요소 숨김 */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+html {
+    /* 계산 편리함을 위해 글꼴 10px로 설정 */
+    font-size: 10px;
+}
+
+body {
+    /* 왜 body 주석 풀고 modal 주석 처리하면 버튼에 폰트가 적용 안되지? */
+    /* font-family: 'GmarketSansMedium'; */
+}
+
+.modal {
+    font-family: 'GmarketSansMedium';
+    width: 330px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.licat-img {
+    /* 데스크탑 비율 맞춰서 계산해봤는데 맞는지 모르겠음 */
+    /* 433/800 = 0.54125 */
+    /* 330 * 0.54125 */
+    width: 178.6125px;
+}
