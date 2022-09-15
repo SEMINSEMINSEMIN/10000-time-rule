@@ -121,16 +121,6 @@ dfn {
     margin: 17px 0 0;
 }
 
-@media screen and (max-width: 526px) {
-    .mobile-br {
-        display: block;
-        margin-top: 19px;
-    }
-    .computation-btn>span {
-        margin-top: 0;
-    }
-}
-
 input {
     box-sizing: content-box;
     width: 156px;
@@ -139,12 +129,6 @@ input {
     border-radius: 7px;
     color: var(--point-text-color);
     text-align: center;
-}
-
-@media screen and (min-width: 395px) {
-    input {
-        width: 228px;
-    }
 }
 
 input::placeholder {
@@ -160,6 +144,7 @@ input:focus, textarea:focus, select:focus{
     box-sizing: content-box;
     padding: 19px 36.5px 17px;
     gap: 10px;
+    width: 168px;
     height: 32px;
     color: var(--point-text-color);
     background-color: var(--btn-color);
@@ -176,4 +161,23 @@ input:focus, textarea:focus, select:focus{
     bottom: -7px;
     width: 43px;
     height: 48px;
+}
+
+@media screen and (min-width: 395px) {
+    input {
+        width: 228px;
+    }
+    .computation-btn {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .mobile-br {
+        display: block;
+        margin-top: 19px;
+    }
+    .computation-btn>span {
+        margin-top: 0;
+    }
 }
