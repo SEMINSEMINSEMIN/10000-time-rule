@@ -1,12 +1,5 @@
 /* 글꼴 */
 @font-face {
-    font-family: 'OTEnjoystoriesBA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'GmarketSansBold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
     font-weight: normal;
@@ -245,7 +238,6 @@ small {
     /* font-family: 'GmarketSansMedium'; */
     /* 330 / 360 = 91.66% */
     padding: 40px 45px;
-
     margin: 0 auto;
     width: 91.7%;
     max-width: 800px;
