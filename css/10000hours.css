@@ -49,6 +49,11 @@
     overflow: hidden;
 }
 
+/* 이미지 깨짐 문제 */
+img {
+    transform: translateZ(0);
+}
+
 /* 메인 코드 */
 /* 모바일부터 시작함 */
 html {
@@ -57,12 +62,12 @@ html {
 }
 
 body {
+    font-size: 1.4rem;
     background-color: var(--main-bg-color);
     font-family: 'GmarketSansMedium';
 }
 
 main {
-    font-size: 1.4rem;
     color: var(--main-text-color);
     text-align: center;
 }
@@ -116,8 +121,8 @@ dd>span:nth-child(2), dd>span:nth-child(3) {
 
 dfn {
     /* font-family로 해야할지 font-weight로 해야할지 헷갈림 */
-    /* font-family: 'GmarketSansBold'; */
-    font-weight: 700;
+    font-family: 'GmarketSansBold';
+    /* font-weight: 700; */
 }
 
 /* section.time-computation area */
@@ -198,10 +203,13 @@ strong {
 
 .study {
     padding: 13.5px 17.5px 12.5px;
+    height: 1em;
+    margin-right:13px;
 }
 
 .share {
     padding: 13.5px 19px 12.5px;
+    height: 1em;
 }
 
 .studynshare {
@@ -232,6 +240,46 @@ small {
     margin-top: 17px;
 }
 
+/* 모달 */
+.modal {
+    /* font-family: 'GmarketSansMedium'; */
+    /* 330 / 360 = 91.66% */
+    padding: 40px 45px;
+
+    margin: 0 auto;
+    width: 91.7%;
+    max-width: 800px;
+    /* height: 500px; */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.licat-img {
+    width: 178.6125px;
+}
+
+.go-btn {
+    font-family: 'GmarketSansBold';
+    display: block;
+    background-color: var(--btn-color);
+    box-sizing: content-box;
+    padding: 19px 36.5px 17px;
+    min-width: 168px;
+    height: 3.2rem;
+    color: var(--point-text-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 13px;
+    font-size: 1.4rem;
+    margin-top: 25.96px;
+}
+
+.cheer-up {
+    margin-bottom: 30px;
+}
+
+/* 반응형 */
 @media screen and (min-width: 527px) {
     input {
         width: 228px;
