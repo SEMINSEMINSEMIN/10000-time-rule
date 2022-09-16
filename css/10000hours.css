@@ -230,9 +230,9 @@ footer {
 
 .copyright {
     margin-top: 17px;
-    /* font-size: 0.9rem; */
+    font-size: 0.9rem;
     /* font-size: 50%; */
-    font-size: 1px;
+    /* font-size: 1px; */
     color: var(--main-text-color);
 }
 
