@@ -58,6 +58,7 @@ body {
     font-size: 1.4rem;
     background-color: var(--main-bg-color);
     font-family: 'GmarketSansMedium';
+    margin: 0 14px;
 }
 
 main {
@@ -148,7 +149,8 @@ input:focus, textarea:focus, select:focus{
 .computation-btn {
     position: relative;
     padding: 19px 36.5px 17px;
-    min-width: 168px;
+    /* min-width: 168px; */
+    /* width: 168px; */
     height: 3.2rem;
     color: var(--point-text-color);
     margin-top: 49px;
@@ -237,9 +239,9 @@ small {
 .modal {
     /* font-family: 'GmarketSansMedium'; */
     /* 330 / 360 = 91.66% */
-    padding: 40px 45px;
+    padding: 40px 0;
     margin: 0 auto;
-    width: 91.7%;
+    width: 91.7vw;
     max-width: 800px;
     /* height: 500px; */
     background: #FFFFFF;
@@ -256,9 +258,11 @@ small {
     font-family: 'GmarketSansBold';
     display: block;
     background-color: var(--btn-color);
-    box-sizing: content-box;
-    padding: 19px 36.5px 17px;
+    /* box-sizing: content-box; */
+    padding: 1.9rem 0 1.7rem;
     min-width: 168px;
+    margin: 0 auto;
+    width: 73%;
     color: var(--point-text-color);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 13px;
@@ -271,6 +275,7 @@ small {
 }
 
 /* 반응형 */
+/* 최소 너비를 320px로 고려하고 함 */
 @media screen and (min-width: 527px) {
     input {
         width: 228px;
